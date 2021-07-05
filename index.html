@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="/assets/fonts/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-apps">
+        <!-- <div class="square-apps">
+            <h1>HD</h1>
+            <p>23:59:59</p>
+            <div class="delete-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </div> -->
+        <div class="create-btn" onclick="openModal()">
+            <i class="fas fa-plus"></i>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body">
+            <h5>NAME</h5>
+            <input type="text" name="" id="name">
+            <h5>STATUS</h5>
+            <select name="" id="seclect">
+                <option value="Done">Done</option>
+                <option value="Todo">Todo</option>
+                <option value="Cancel">Cancel</option>
+            </select>
+            <div class="btn-direct">
+                <button class="btn close-modal" onclick="closeModal()">Thôi! Không</button>
+                <button class="btn btn-active create-app" onclick="onCreateApp()">Quất!</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
